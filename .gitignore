@@ -1,0 +1,6 @@
+*.py[cod]
+*$py.class
+__pypackages__/
+venv/
+idea.md
+.idea
