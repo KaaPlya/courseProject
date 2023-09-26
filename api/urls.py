@@ -1,5 +1,3 @@
-
-
 from django.urls import path
 from validation import views
 from api.views import AllPostsListView, BlogPostDetailView, add_comment, add_reply, CourseListView, CourseDetailView, SectionListView, SectionDetailView, \
