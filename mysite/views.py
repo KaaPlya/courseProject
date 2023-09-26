@@ -86,7 +86,7 @@ def Checkout(request, slug):
                 }
             else:
                 with open("secret key.json",'r') as secret:
-                    key = json.load(secret)['QIWI']
+                    key = json.load(secret)['qiwi']
                 student = StudentInfo.objects.filter(username=request.user).first()
                 client = QIWI.Client(auth=(key['key id'],key['key secret']))
                 payment_id = client.order.create({'amount':course.course_price*100, 'currency':'INR','payment_capture':'1'})
